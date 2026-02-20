@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+	<title>My Ultimate College Life Web Page</title>
+    <style>
+		body {
+			font-family: 'Lucida Sans', sans-serif;
+			background-color: #293961;
+			text-align: center;
+
+		}
+		h1 {
+			font-size: 40;
+			padding: 60px;
+		}
+		h2 {
+			padding: 50px;
+		}
+		h3{
+			padding: 150px;
+		}
+		li{
+			display: block;
+			padding: 5px;
+		}
+		button {
+			font-family: 'Lucida Sans', sans-serif;
+			padding: 50px;
+			margin: 20px;
+			background-color: #2c497f;
+			color: #E3E4FA;
+			border-radius: 12px;
+			box-shadow: 5px 5px 10px 5px;
+			text-shadow: 2px black;
+		}
+		header {
+			font-family: 'Lucida Sans', sans-serif;
+			background-color: #1D2D44;
+			color: #E3E4FA;
+			padding: 40px 20px;
+		}
+		img {
+			height: 250px;
+			width: 200px;
+			object-fit: cover;
+			padding: 0 0 10px;
+		}
+
+		.container {
+			max-height: 700px;
+			max-width: 900px;
+			margin: auto;
+			padding: 50px;
+		}
+
+		.sections {
+			background-color: #8897BD;
+			padding: 20px;
+			margin: 20px 0;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px;
+			color: #1D2D44;
+		}
+		.column{
+			display: inline;
+		}
+    </style>
+</head>
+<body>
+	<header>
+		<h1>Eric Ampongan</h1>
+		<p>Hello!<br>I'm a Computer Science student that likes to read fiction. Whether it may be fairy tales, folktales, myths, or manga,<br>
+			I'm up for a conversation whenever. I am still learning the ropes of coding so that I may make my dreams come true<br>
+			so this project may come a bit underwhelming as it is made by a beginner.</p>
+	</header>
+	<hr>
+	<div class="container">
+	<div class="sections">
+	<h2>📓College Must-haves📓</h2>
+		<button type="button" onclick="alert('For writing notes or doodling when bored.')">Paper & pen</button>
+		<button type="button" onclick="alert('For making activities and navigating the web.')">Laptop</button>
+		<button type="button" onclick="alert('One should not forget about their own nourishment.')">Food</button>
+		<button type="button" onclick="alert('To be able to enter the university.')">ID</button>
+	</div></div>
+	<hr>
+	<div class="container">
+	<div class="sections">
+	<h2>🕰️Daily Routine🕰️</h2>
+		<ol>
+			<li><b>6:00 AM</b> - Getting Ready</li>
+			<li><b>7:30 AM</b> - Class</li>
+			<li><b>10:30 AM</b> - Study/Leisure</li>
+			<li><b>12:00 PM</b> - Class</li>
+			<li><b>4:30 PM</b> - Study/Leisure</li>
+			<li><b>7:30 PM</b> - Class</li>
+			<li><b>9:00 PM</b> - Hobbies</li>
+			<li><b>12:00 PM</b> - Sleep</li>
+		</ol>
+	</div></div>
+	<hr>
+	<div class="container">
+	<div class="sections">
+	<h2>🎨Hobbies/interests🎯</h2>
+		<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="alert('An unpainted clay bugcat')"src="clay_bugcat.jpg">
+		<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="alert('yum!')" src="mango_graham.jpg">
+		<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="alert('Title: Got Dropped in a Ghost Story, Still Gotta Work!')"src="kim_soleum.jpeg">
+		<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" onclick="alert('meow')" src="cat.jpg"><br>
+		<ul style="columns: 4">
+			<li>Arts & Crafts</li>
+			<li>Eating</li>
+			<li>Reading</li>
+			<li>Cats</li>
+		</ul>
+	</div></div>
+	<hr>
+	<div class="container">
+	<div class="sections">
+	<h2>💻Work Experience💻</h2>
+		<h3><i><u>✨ None ✨</u></i></h3>
+	</div></div>
+	<script>
+		function bigImg(x) {
+			x.style.height = "280px";
+			x.style.width = "230px";
+		}
+		function normalImg(x) {
+			x.style.height = "250px";
+			x.style.width = "200px";
+		}
+	</script>
+</body>
